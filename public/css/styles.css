@@ -19,8 +19,29 @@ body .contaner {
   color: #001534;
 }
 
-body {
-  color: orange;
+ul {
+  list-style: none;
+  text-align: right;
+}
+ul li {
+  display: inline;
+  font-size: 3rem;
+  color: #D6FFF5;
+}
+ul li:hover {
+  color: red;
+}
+
+.block {
+  background-color: red;
+}
+
+.block__element {
+  color: white;
+}
+
+.block .block__element--modifier {
+  background-color: orange;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -19,6 +19,26 @@ body {
     }
 }
 
-body{
-    color: orange;
+ul {
+    list-style: none;
+    text-align: right;
+    li {
+        display: inline;
+        font-size: 3rem;
+        color: #D6FFF5;
+        &:hover {
+            color: red;
+            }
+    }
+}
+
+.block{
+    background-color: red;
+}
+    .block__element {
+        color: white;
+    }
+
+.block .block__element--modifier{
+    background-color: orange;
 }
