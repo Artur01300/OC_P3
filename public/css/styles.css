@@ -1,47 +1,80 @@
 body {
-  background-color: grey;
+  background-color: wheat;
+  margin: 0px;
+  padding: 0px;
 }
-body .contaner {
+
+.contaner {
   background-color: white;
+  width: 1300px;
+  margin: auto;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  width: 800px;
+  margin: auto;
+}
+
+.quote {
+  background-color: darkkhaki;
+  text-align: right;
+}
+
+.proj-prev {
+  color: #D6FFF5;
+  margin-bottom: 2.5rem;
+}
+
+.proj-prev__heading {
+  font-size: 4rem;
+  padding-left: 2.5rem;
+  margin: 0px;
+  line-height: 6rem;
+}
+
+.proj-prev--mint {
+  color: aqua;
+}
+
+.proj-prev--yellow {
+  color: yellow;
+}
+
+.proj-prev--olive {
+  color: olive;
+}
+
+.proj-prev--crimson {
+  color: crimson;
 }
 
 .nav {
   padding-right: 6rem;
-  flex: 2 1 auto;
   text-align: right;
 }
-.nav .nav__link {
+
+.nav__link {
   display: inline;
   font-size: 3rem;
   padding-left: 1.5rem;
 }
-.nav .nav__link .nav__link--active {
+
+.nav__link a {
+  text-decoration: none;
+  color: #d6fff5;
+}
+
+.nav__link--active {
   color: #001534;
 }
 
-ul {
-  list-style: none;
-  text-align: right;
-}
-ul li {
-  display: inline;
-  font-size: 3rem;
-  color: #D6FFF5;
-}
-ul li:hover {
-  color: red;
-}
-
-.block {
-  background-color: red;
-}
-
-.block__element {
-  color: white;
-}
-
-.block .block__element--modifier {
-  background-color: orange;
+.nav__link a:hover {
+  color: chartreuse;
+  background-color: green;
 }
 
 /*# sourceMappingURL=styles.css.map */
