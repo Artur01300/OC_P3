@@ -74,7 +74,18 @@ body {
 
 .nav__link a:hover {
   color: chartreuse;
-  background-color: green;
+}
+
+.block {
+  background-color: sienna;
+  width: 100px;
+  height: 100px;
+}
+.block__element {
+  color: silver;
+}
+.block__element--modifier {
+  background-color: springgreen;
 }
 
 /*# sourceMappingURL=styles.css.map */

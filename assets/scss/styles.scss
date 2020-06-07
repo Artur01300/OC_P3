@@ -74,5 +74,16 @@ body{
 
 .nav__link a:hover{
     color: chartreuse;
-   background-color: green;
+}
+
+.block{
+    background-color: sienna;
+    width: 100px;
+    height: 100px;
+    &__element {
+        color: silver;
+        &--modifier{
+            background-color: springgreen;
+        }
+    }
 }
