@@ -90,7 +90,7 @@ body{
 .btn2 {
     display: inline-block;
     margin: 0 auto;
-    background-color: #15DEA5;
+    background-color: red;
     padding: 1.5rem;
     &--disabled{
         background-color: grey;
@@ -103,4 +103,7 @@ body{
         }
     }
   }
+
+  $mint: #15DEA5;
+
   
