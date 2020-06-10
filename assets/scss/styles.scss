@@ -105,5 +105,44 @@ body{
   }
 
   $mint: #15DEA5;
+  $pink:#ffa7c2;
+  .form {
+      width: 100%;
+      padding-bottom: 1.5rem;
+      color: red;
+}
 
-  
+.form__heading {
+          width: 100%;
+          color: #fff;
+          /*text-shadow: 0.55rem 0.55rem; color: #11af82;*/
+          background: $mint;
+          line-height: 5rem;
+          padding: 1.5rem;
+}
+
+.form__field label{
+    color: pink;
+    display: block;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-top: 1.5rem;
+}
+
+.form__field input{
+    width: 100%;
+    background: #001534;
+    border: 0.1rem solid $mint;
+    padding: 1.5rem;
+    color: #D6FFF5;
+}
+
+.form__field textarea {
+    width: 100%;
+    color: $mint;
+    background: #001534;
+    border: 0.1rem solid $mint;
+    outline: none;
+    padding: 1.5rem;
+    margin-bottom: 0.75rem;
+}
