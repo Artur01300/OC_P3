@@ -76,14 +76,31 @@ body{
     color: chartreuse;
 }
 
-.block{
-    background-color: sienna;
-    width: 100px;
-    height: 100px;
-    &__element {
-        color: silver;
-        &--modifier{
-            background-color: springgreen;
-        }
+.btn{
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #15DEA5;
+    padding: 1.5rem;
+    &--outline {
+        background-color: transparent;
+        border: 2px solid #15DEA5;
     }
 }
+
+.btn2 {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #15DEA5;
+    padding: 1.5rem;
+    &--disabled{
+        background-color: grey;
+    }
+    &--outline{
+        background-color: transparent;
+        border: solid 2px grey;
+        &.btn2--disabled{
+            border: 2px solid grey;
+        }
+    }
+  }
+  
