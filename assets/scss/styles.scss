@@ -69,7 +69,7 @@ body{
 }
 
 .nav__link--active {
-    color: #001534;
+    color: grey;
 }
 
 .nav__link a:hover{
@@ -106,19 +106,24 @@ body{
 
   $mint: #15DEA5;
   $pink:#ffa7c2;
+
+@mixin heading-shadow {
+    text-shadow: .55rem .55rem #15DEA5;
+}
+
   .form {
-      width: 100%;
-      padding-bottom: 1.5rem;
-      color: red;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    color: red;
 }
 
 .form__heading {
-          width: 100%;
-          color: #fff;
-          /*text-shadow: 0.55rem 0.55rem; color: #11af82;*/
-          background: $mint;
-          line-height: 5rem;
-          padding: 1.5rem;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0.55rem 0.55rem; color: #11af82;
+    background: $mint;
+    line-height: 5rem;
+    padding: 1.5rem;
 }
 
 .form__field label{
@@ -146,3 +151,10 @@ body{
     padding: 1.5rem;
     margin-bottom: 0.75rem;
 }
+
+.project{
+    &__heading{
+        @include heading-shadow;
+    }
+}
+

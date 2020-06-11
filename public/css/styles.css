@@ -69,7 +69,7 @@ body {
 }
 
 .nav__link--active {
-  color: #001534;
+  color: grey;
 }
 
 .nav__link a:hover {
@@ -113,7 +113,8 @@ body {
 .form__heading {
   width: 100%;
   color: #fff;
-  /*text-shadow: 0.55rem 0.55rem; color: #11af82;*/
+  text-shadow: 0.55rem 0.55rem;
+  color: #11af82;
   background: #15DEA5;
   line-height: 5rem;
   padding: 1.5rem;
@@ -143,6 +144,10 @@ body {
   outline: none;
   padding: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+.project__heading {
+  text-shadow: 0.55rem 0.55rem #15DEA5;
 }
 
 /*# sourceMappingURL=styles.css.map */
