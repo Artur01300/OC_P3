@@ -1,153 +1,233 @@
+@charset "UTF-8";
 body {
-  background-color: wheat;
-  margin: 0px;
-  padding: 0px;
+  background-color: #f6f6f6;
+}
+body .container {
+  background-color: white;
 }
 
-.contaner {
-  background-color: white;
-  width: 1300px;
+/*teal*/
+/*lime*/
+body {
+  max-width: 1000px;
   margin: auto;
+}
+
+@font-face {
+  font-family: "chantelli_antiquaregular";
+  src: url("fonts/menu1/chantelli_antiqua-webfont.woff2") format("woff2"), url("fonts/menu1/chantelli_antiqua-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-main {
+  width: 75%;
+  margin-bottom: 50px;
+  height: 120px;
+  background-color: #009688;
+  color: #CDDC39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-main__heading {
+  font-size: 4em;
+  margin: 0 auto;
 }
 
 .grid {
+  width: 70%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 50px;
-  width: 800px;
   margin: auto;
 }
 
-.quote {
-  background-color: darkkhaki;
-  text-align: right;
+.proj-prev {
+  box-shadow: 5px 5px 5px #8d8c8c;
+  background-color: #e9c9c6;
+  margin-bottom: 50px;
+  width: 40%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.proj-prev__heading {
+  padding-top: 10px;
+  font-size: 0.8em;
+}
+
+.proj-prev__polic {
+  color: #3E2723;
+  font-family: "chantelli_antiquaregular";
 }
 
 .proj-prev {
-  color: #D6FFF5;
-  margin-bottom: 2.5rem;
+  background-color: #e9c9c6;
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.proj-prev:hover {
+  transform: scale(1.15);
+  background-color: #faeaea;
 }
 
-.proj-prev__heading {
-  font-size: 4rem;
-  padding-left: 2.5rem;
+.fa-music {
+  background: -webkit-linear-gradient(#f87575, #9b4949);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.proj-prev--pinc {
+  background-color: #f8bee1;
+  font-family: "Arial Nova", serif;
+  color: chocolate;
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.proj-prev--pinc:hover {
+  transform: scale(1.15);
+  background-color: #f3d5e8;
+}
+
+.proj-prev__heading--franc {
+  background: -webkit-linear-gradient(#f87575, #201eaf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.proj-prev--gri {
+  background-color: #94f691;
+  font-family: "Monotype Corsiva";
+  color: #0288D1;
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.proj-prev--gri:hover {
+  transform: scale(1.15);
+  background-color: #acf7aa;
+}
+
+.proj-prev__heading--papi {
+  background: -webkit-linear-gradient(#f87575, #027ef1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.proj-prev--white {
+  background-color: #e6f595;
+  font-family: "MV Boli";
+  color: #4CAF50;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.proj-prev--white:hover {
+  transform: scale(1.15);
+  background-color: #f0f6cf;
+}
+
+.proj-prev__heading--gou {
+  background: -webkit-linear-gradient(#4CAF50, #83dbbc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.artc-prev {
+  background-color: #009688;
+  color: #CDDC39;
+  width: 280px;
+  height: 50px;
+  border-radius: 8px;
+}
+.artc-prev__heading {
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.8em;
+}
+
+.foot-main {
+  width: 75%;
+  padding-top: 50px;
+}
+.foot-main__prev {
+  background-color: #009688;
+  color: #CDDC39;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.foot-main__heading, .foot-main__contact {
+  font-size: 1.5em;
+}
+
+/*page note enchantéé*/
+.not {
+  font-size: 2em;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+
+.main-not {
+  background-color: #e9c9c6;
+  width: 55%;
+  text-align: center;
+  padding: 50px 55px;
+}
+
+.main-not__text {
+  width: 100%;
+}
+
+.main-not__text tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  padding: 0px 20px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.line:after,
+.line:before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 81%;
+  top: 50%;
+  right: 100%;
+  background-color: #350d0a;
+}
+
+.line:after {
+  left: 100%;
+}
+
+.main-not__title {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
   margin: 0px;
-  line-height: 6rem;
-}
-
-.proj-prev--mint {
-  color: aqua;
-}
-
-.proj-prev--yellow {
-  color: yellow;
-}
-
-.proj-prev--olive {
-  color: olive;
-}
-
-.proj-prev--crimson {
-  color: crimson;
-}
-
-.nav {
-  padding-right: 6rem;
-  text-align: right;
-}
-
-.nav__link {
-  display: inline;
-  font-size: 3rem;
-  padding-left: 1.5rem;
-}
-
-.nav__link a {
-  text-decoration: none;
-  color: #d6fff5;
-}
-
-.nav__link--active {
-  color: grey;
-}
-
-.nav__link a:hover {
-  color: chartreuse;
-}
-
-.btn {
-  display: inline-block;
-  margin: 0 auto;
-  background-color: #15DEA5;
-  padding: 1.5rem;
-}
-.btn--outline {
-  background-color: transparent;
-  border: 2px solid #15DEA5;
-}
-
-.btn2 {
-  display: inline-block;
-  margin: 0 auto;
-  background-color: red;
-  padding: 1.5rem;
-}
-.btn2--disabled {
-  background-color: grey;
-}
-.btn2--outline {
-  background-color: transparent;
-  border: solid 2px grey;
-}
-.btn2--outline.btn2--disabled {
-  border: 2px solid grey;
-}
-
-.form {
-  width: 100%;
-  padding-bottom: 1.5rem;
-  color: red;
-}
-
-.form__heading {
-  width: 100%;
-  color: #fff;
-  text-shadow: 0.55rem 0.55rem;
-  color: #11af82;
-  background: #15DEA5;
-  line-height: 5rem;
-  padding: 1.5rem;
-}
-
-.form__field label {
-  color: pink;
-  display: block;
-  font-size: 2rem;
-  line-height: 2rem;
-  padding-top: 1.5rem;
-}
-
-.form__field input {
-  width: 100%;
-  background: #001534;
-  border: 0.1rem solid #15DEA5;
-  padding: 1.5rem;
-  color: #D6FFF5;
-}
-
-.form__field textarea {
-  width: 100%;
-  color: #15DEA5;
-  background: #001534;
-  border: 0.1rem solid #15DEA5;
-  outline: none;
-  padding: 1.5rem;
-  margin-bottom: 0.75rem;
-}
-
-.project__heading {
-  text-shadow: 0.55rem 0.55rem #15DEA5;
 }
 
 /*# sourceMappingURL=styles.css.map */
