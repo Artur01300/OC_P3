@@ -43,6 +43,11 @@ body{
     }
 }
 
+.header-main__heading a{
+    text-decoration: none;
+    color: #CDDC39;
+}
+
 .grid{
     width: 70%;
     display: flex;
@@ -75,6 +80,7 @@ body{
 
   .proj-prev{
     background-color: rgb(233, 201, 198);
+    background-image: url(enchante.html);
     cursor: pointer;
     transform: scale(1);
     transition-property: transform;
@@ -182,11 +188,19 @@ body{
     font-size: 1.5em;
 }
 
-                     /*page note enchantéé*/
+                     /*page note enchantée*/
 .not{
     font-size: 2em;
     padding-bottom: 20px;
     margin-top: -10px;
+    font-weight: bolder;
+}
+
+.main-not__title{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 0px 40px 0px;
+    margin: 0px;
 }
 
 .main-not{
@@ -194,6 +208,12 @@ body{
     width: 55%;
     text-align: center;
     padding: 50px 55px;
+    padding: 50px 55px 70px 55px;
+}
+
+.main-not__byline{
+    margin: 0 auto;
+    padding: 20px 0px;
 }
 
 .main-not__text{
@@ -203,23 +223,28 @@ body{
 .main-not__text tr{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
+
 
 .line{
     display: inline-block;
     position: relative;
-    width: 30%;
+    width: 29%;
     padding: 0px 20px;
     font-weight: bolder;
     font-size: 20px;
+    margin: 0px;
+   
 }
 
 .line:after,
 .line:before {
     content: "";
     position: absolute;
+    font-family: "Palace Script MT";
     height: 4px;
-    width: 81%;
+    width: 87%;
     top: 50%;
     right: 100%;
     background-color:#350d0a;
@@ -227,10 +252,16 @@ body{
 }
 .line:after { left: 100%; }
 
-
-.main-not__title{
-    font-size: 40px;
-    font-weight: bold;
-    padding: 20px;
-    margin: 0px;
+.main-not__booter{
+    font-size: 1.3em;
+    font-weight: bolder;
 }
+
+.enchante-link{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+            /*page Le chic à la française*/
