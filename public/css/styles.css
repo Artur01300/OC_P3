@@ -247,5 +247,8 @@ body {
 }
 
 /*menu2*/
+.menu-container--menu2 {
+  background-color: #f8bee1;
+}
 
 /*# sourceMappingURL=styles.css.map */
