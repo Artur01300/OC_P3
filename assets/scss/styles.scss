@@ -13,15 +13,6 @@ body{
     margin: auto;
 }
 
-@font-face {
-    font-family: 'chantelli_antiquaregular';
-    src: url('fonts/menu1/chantelli_antiqua-webfont.woff2') format('woff2'),
-         url('fonts/menu1/chantelli_antiqua-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 .container{
     display: flex;
     flex-direction: column;
@@ -72,12 +63,6 @@ body{
     }
   }
 
-  .proj-prev__polic{
-    color :#3E2723;
-    font-family: "chantelli_antiquaregular";
-
-}
-
   .proj-prev{
     background-color: rgb(233, 201, 198);
     background-image: url(enchante.html);
@@ -90,14 +75,26 @@ body{
         background-color: rgb(250, 234, 234);
     }
   }
+
+  @font-face {
+    font-family: "chantelli_antiquaregular";
+    src: url("fonts/menu1/chantelli_antiqua-webfont.woff2") format("woff2"), url("fonts/menu1/chantelli_antiqua-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
   
+  .proj-prev__heading, .proj-prev__byline{
+    font-size: 1.2em;
+    font-family: "chantelli_antiquaregular";
+}
+
 .fa-music{
     background: -webkit-linear-gradient(rgb(248, 117, 117), rgb(155, 73, 73));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-.proj-prev--pinc{
+.proj-prev--menu2{
     background-color: rgb(248, 190, 225);
     font-family: 'Arial Nova', serif;
     color: chocolate;
@@ -111,14 +108,14 @@ body{
     }
   }
 
-.proj-prev__heading--franc{
+.proj-prev__heading--menu2{
     background: -webkit-linear-gradient(rgb(248, 117, 117), rgb(32, 30, 175));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
 }
 
-.proj-prev--gri{
+.proj-prev--menu3{
     background-color: rgb(148, 246, 145);
     font-family: 'Monotype Corsiva';
     color: #0288D1;
@@ -132,13 +129,13 @@ body{
     }
 }
 
-.proj-prev__heading--papi{
+.proj-prev__heading--menu3{
     background: -webkit-linear-gradient(rgb(248, 117, 117), #027ef1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.proj-prev--white{
+.proj-prev--menu4{
     background-color: rgb(230, 245, 149);
     font-family: 'MV Boli';
     color: #4CAF50;
@@ -151,7 +148,7 @@ body{
     }
 }
 
-.proj-prev__heading--gou{
+.proj-prev__heading--menu4{
     background: -webkit-linear-gradient(#4CAF50, #83dbbc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -188,72 +185,60 @@ body{
     font-size: 1.5em;
 }
 
-                     /*page note enchantée*/
-.not{
+                                        /*menu1*/
+.menu-header{
     font-size: 2em;
     padding-bottom: 20px;
     margin-top: -10px;
     font-weight: bolder;
 }
 
-.main-not__title{
+.menu-container__title{
     font-size: 35px;
     font-weight: bold;
     padding: 10px 0px 40px 0px;
     margin: 0px;
 }
 
-.main-not{
+.menu-container{
     background-color:#e9c9c6;
     width: 55%;
-    text-align: center;
     padding: 50px 55px;
     padding: 50px 55px 70px 55px;
+    text-align: center;
+    font-family: "chantelli_antiquaregular";
 }
 
-.main-not__byline{
+.menu-container__byline{
     margin: 0 auto;
     padding: 20px 0px;
 }
 
-.main-not__text{
+.menu-container__text{
     width: 100%;
 }
 
-.main-not__text tr{
+.menu-container__text tr{
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
 }
 
-
-.line{
-    display: inline-block;
-    position: relative;
-    width: 29%;
-    padding: 0px 20px;
+.menu-container__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-weight: bolder;
-    font-size: 20px;
-    margin: 0px;
-   
 }
 
-.line:after,
-.line:before {
-    content: "";
-    position: absolute;
-    font-family: "Palace Script MT";
-    height: 4px;
-    width: 87%;
-    top: 50%;
-    right: 100%;
-    background-color:#350d0a;
-    
+.menu-container-line__titl{
+    font-weight: bolder;
+    font-size: 1.4em;
+    margin: auto;
 }
-.line:after { left: 100%; }
 
-.main-not__booter{
-    font-size: 1.3em;
+.menu-container__footer{
+    font-size: 1.5em;
     font-weight: bolder;
 }
 
@@ -264,4 +249,5 @@ body{
     left: 0;
     top: 0;
 }
-            /*page Le chic à la française*/
+                                     /*menu2*/
+                                     
