@@ -104,7 +104,7 @@ body{
     transition-duration: 1000ms;
     &:hover{
         transform: scale(1.15);
-        background-color: rgb(243, 213, 232);
+        background-color:  rgb(250, 230, 242);
     }
   }
 
@@ -152,7 +152,6 @@ body{
     background: -webkit-linear-gradient(#4CAF50, #83dbbc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .artc-prev{
@@ -226,9 +225,7 @@ body{
 
 .menu-container__line{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-weight: bolder;
+    margin: 0 auto;
 }
 
 .menu-container-line__titl{
@@ -242,7 +239,7 @@ body{
     font-weight: bolder;
 }
 
-.enchante-link{
+.link{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -252,5 +249,29 @@ body{
                                      /*menu2*/
                                      
 .menu-container--menu2{
-   background-color: #f8bee1;
+    background-color: rgb(250, 230, 242);
+    padding: 80px 80px;
+}
+
+.svg-left, .svg-right {
+    width: 200px;
+}
+
+.svg-left{
+    margin-left: -80px;
+}
+.svg-right{
+    margin-right: -80px;
+}
+.sec-clbrown{
+    padding-top: 40px;
+    color: #ce7f63;
+}
+
+.sec-clpurple{
+    color: #9C27B0;
+}
+
+.sec-clindigo{
+    color: #3949AB;
 }
