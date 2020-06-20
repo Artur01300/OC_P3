@@ -5,8 +5,19 @@ body{
     }
 }
 
+@font-face {
+    font-family: "chantelli_antiquaregular";
+    src: url("fonts/menu1/chantelli_antiqua-webfont.woff2") format("woff2"), url("fonts/menu1/chantelli_antiqua-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @mixin font-family ($menu1) {
+      font-family: "chantelli_antiquaregular";
+  }
+
 $color-primary: #009688; /*teal*/
 $color-ohmyfood: #CDDC39; /*lime*/
+
 
 body{
     max-width: 1000px;
@@ -75,13 +86,6 @@ body{
         background-color: rgb(250, 234, 234);
     }
   }
-
-  @font-face {
-    font-family: "chantelli_antiquaregular";
-    src: url("fonts/menu1/chantelli_antiqua-webfont.woff2") format("woff2"), url("fonts/menu1/chantelli_antiqua-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
   
   .proj-prev__heading, .proj-prev__byline{
     font-size: 1.2em;
@@ -109,7 +113,7 @@ body{
   }
 
 .proj-prev__heading--menu2{
-    background: -webkit-linear-gradient(rgb(248, 117, 117), rgb(32, 30, 175));
+    background:linear-gradient(to right, #ce7f63,#a265acda,#3949AB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
@@ -192,25 +196,42 @@ body{
     font-weight: bolder;
 }
 
-.menu-container__title{
-    font-size: 35px;
-    font-weight: bold;
-    padding: 10px 0px 40px 0px;
-    margin: 0px;
-}
-
 .menu-container{
     background-color:#e9c9c6;
-    width: 55%;
-    padding: 50px 55px;
-    padding: 50px 55px 70px 55px;
-    text-align: center;
-    font-family: "chantelli_antiquaregular";
+    width: 65%;
+    @include font-family(menu1);
 }
 
-.menu-container__byline{
+.menu-container__head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px 30px 0px;
+}
+
+.sec-container{
+    padding: 0px 55px;
+}
+
+.menu-container__line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.svg-menu1__right{
+    width: 180px;
+}
+
+.svg-menu1__left{
+    width: 180px;
+}
+
+.menu-container__title{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
     margin: 0 auto;
-    padding: 20px 0px;
 }
 
 .menu-container__text{
@@ -223,20 +244,18 @@ body{
     padding-bottom: 20px;
 }
 
-.menu-container__line{
-    display: flex;
-    margin: 0 auto;
-}
-
 .menu-container-line__titl{
     font-weight: bolder;
-    font-size: 1.4em;
-    margin: auto;
+    font-size: 1.2em;
+    margin: 0 auto;
+    
 }
 
 .menu-container__footer{
     font-size: 1.5em;
     font-weight: bolder;
+    text-align: center;
+    padding: 50px 0px;
 }
 
 .link{
@@ -250,21 +269,30 @@ body{
                                      
 .menu-container--menu2{
     background-color: rgb(250, 230, 242);
-    padding: 80px 80px;
 }
 
-.svg-left, .svg-right {
-    width: 200px;
+.proj-prev__heading--menu2{
+    padding: 100px 0px 60px 0px;
 }
 
-.svg-left{
-    margin-left: -80px;
+.byline--menu2{
+    padding: 20px 80px;
 }
-.svg-right{
-    margin-right: -80px;
+
+.menu-container--menu2 section{
+    font-family: 'Times New Roman', Times, serif;
 }
+
+.titl--menu2{
+    display: flex;
+    align-items: center;
+}
+
+.svg-left--menu2, .svg-right--menu2{
+    width: 220px;
+}
+
 .sec-clbrown{
-    padding-top: 40px;
     color: #ce7f63;
 }
 
@@ -274,4 +302,7 @@ body{
 
 .sec-clindigo{
     color: #3949AB;
+    padding-bottom: 80px;
 }
+
+                        /*menu3*/
