@@ -75,6 +75,8 @@ body{
   }
 
   .proj-prev{
+    font-size: 1.2em;
+    font-weight: bolder;
     background-color: rgb(233, 201, 198);
     background-image: url(enchante.html);
     cursor: pointer;
@@ -113,6 +115,7 @@ body{
   }
 
 .proj-prev__heading--menu2{
+    padding: 0px;
     background:linear-gradient(to right, #ce7f63,#a265acda,#3949AB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -120,7 +123,7 @@ body{
 }
 
 .proj-prev--menu3{
-    background-color: rgb(148, 246, 145);
+    background-color: #c6cfd3;
     font-family: 'Monotype Corsiva';
     color: #0288D1;
     cursor: pointer;
@@ -129,18 +132,18 @@ body{
     transition-duration: 1000ms;
     &:hover{
         transform: scale(1.15);
-        background-color:rgb(172, 247, 170);
+        background-color: #CFD8DC;
     }
 }
 
 .proj-prev__heading--menu3{
-    background: -webkit-linear-gradient(rgb(248, 117, 117), #027ef1);
+    background:linear-gradient(to right, #0e3ca8,#145386,#45bdf5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .proj-prev--menu4{
-    background-color: rgb(230, 245, 149);
+    background-color:rgb(240, 246, 207);
     font-family: 'MV Boli';
     color: #4CAF50;
     transform: scale(1);
@@ -148,12 +151,12 @@ body{
     transition-duration: 1000ms;
     &:hover{
         transform: scale(1.15);
-        background-color:rgb(240, 246, 207);
+        background-color: white;
     }
 }
 
 .proj-prev__heading--menu4{
-    background: -webkit-linear-gradient(#4CAF50, #83dbbc);
+    background:linear-gradient(to right,(#2bd330, #83dbbc));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -305,4 +308,32 @@ body{
     padding-bottom: 80px;
 }
 
-                        /*menu3*/
+                                /*menu3*/
+
+.menu-container--menu3{
+    background-color: #CFD8DC;
+    padding-bottom: 80px;
+}
+
+.menu-container__title--menu3{
+    padding: 100px 0px 60px 0px;
+}
+
+.sec-container--menu3{
+    color: black;
+}
+
+.line--menu3{
+    padding: 0px 30px;
+}
+
+.byline--menu3{
+    padding: 30px 80px;
+    font-size: 0.9em;
+}
+
+.svg-left--menu3, .svg-right--menu3{
+   width: 170px;
+}
+
+                                /*menu3*/
