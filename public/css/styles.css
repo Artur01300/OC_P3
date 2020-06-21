@@ -29,7 +29,7 @@ body {
   margin-bottom: 50px;
   height: 120px;
   background-color: #009688;
-  color: #CDDC39;
+  color: #fcca46;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +156,7 @@ body {
 
 .artc-prev {
   background-color: #009688;
-  color: #CDDC39;
+  color: #fcca46;
   width: 280px;
   height: 50px;
   border-radius: 8px;
@@ -173,7 +173,7 @@ body {
 }
 .foot-main__prev {
   background-color: #009688;
-  color: #CDDC39;
+  color: #fcca46;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -348,6 +348,41 @@ body {
 .menu-container__text--menu4 {
   padding: 20px 70px;
   font-size: 0.9em;
+}
+
+.loading span {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: #fcca46;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.loading span:nth-child(2) {
+  background-color: #ff8b57;
+  animation-delay: 0.4s;
+}
+
+.loading span:nth-child(3) {
+  background-color: #57ffa0;
+  animation-delay: 0.8s;
+}
+
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateZ(10px);
+  }
+}
+.artc-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
