@@ -1,10 +1,3 @@
-body{
-    background-color: #f6f6f6;
-    .container{
-        background-color: white;
-    }
-}
-
 @font-face {
     font-family: "chantelli_antiquaregular";
     src: url("fonts/menu1/chantelli_antiqua-webfont.woff2") format("woff2"), url("fonts/menu1/chantelli_antiqua-webfont.woff") format("woff");
@@ -15,37 +8,24 @@ body{
       font-family: "chantelli_antiquaregular";
   }
 
-
-@font-face {
-    font-family: 'afta_serifregular';
-    src: url('fonts/menu2/aftaserifthin-regular-webfont.woff2') format('woff2'),
-         url('fonts/menu2/aftaserifthin-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@mixin font-menu2 ($menu2) {
-    font-family: "afta_serifregular";
-}
-
 $color-primary: #009688; /*teal*/
 $color-ohmyfood: #fcca46; /*lime*/
 
 
 body{
-    max-width: 1000px;
     margin: auto;
+    width: 100%;
 }
 
 .container{
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .header-main{
-    width: 75%;
+    width: 100%;
     margin-bottom: 50px;
     height: 120px;   
     background-color: $color-primary;
@@ -65,15 +45,14 @@ body{
 }
 
 .grid{
-    width: 70%;
+    width: 700px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
 }
 
-.proj-prev {
-    @include font-family(menu1);
+.menu-cover {
     box-shadow: 5px 5px 5px rgb(141, 140, 140);
     background-color: rgb(233, 201, 198);
     margin-bottom: 50px;
@@ -89,11 +68,10 @@ body{
     }
   }
 
-  .proj-prev{
+  .menu-cover{
     font-size: 1.2em;
     font-weight: bolder;
     background-color: rgb(233, 201, 198);
-    background-image: url(enchante.html);
     cursor: pointer;
     transform: scale(1);
     transition-property: transform;
@@ -104,9 +82,9 @@ body{
     }
   }
   
-  .proj-prev__heading, .proj-prev__byline{
+  .menu-cover__title, .menu-cover__byline{
     font-size: 1.2em;
-
+    font-family: "chantelli_antiquaregular";
 }
 
 .fa-music{
@@ -115,9 +93,9 @@ body{
     -webkit-text-fill-color: transparent;
   }
 
-.proj-prev--menu2{
-    @include font-menu2(menu2);
+.menu-cover--menu2{
     background-color: rgb(248, 190, 225);
+    font-family: 'Arial Nova', serif;
     color: chocolate;
     cursor: pointer;
     transform: scale(1);
@@ -129,14 +107,15 @@ body{
     }
   }
 
-.proj-prev__heading--menu2{
+.menu-cover__title--menu2{
     padding: 0px;
     background:linear-gradient(to right, #ce7f63,#a265acda,#3949AB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
-.proj-prev--menu3{
+.menu-cover--menu3{
     background-color: #c6cfd3;
     font-family: 'Monotype Corsiva';
     color: #0288D1;
@@ -150,13 +129,13 @@ body{
     }
 }
 
-.proj-prev__heading--menu3{
+.menu-cover__title--menu3{
     background:linear-gradient(to right, #0e3ca8,#145386,#45bdf5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.proj-prev--menu4{
+.menu-cover--menu4{
     background-color:rgb(240, 246, 207);
     font-family: 'MV Boli';
     color: #4CAF50;
@@ -169,61 +148,30 @@ body{
     }
 }
 
-.proj-prev__heading--menu4{
+.menu-cover__title--menu4{
     background:linear-gradient(to right,(#2bd330, #83dbbc));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.artc-prev{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.artcle-main{
     background-color: $color-primary;
     color: $color-ohmyfood;
     width: 280px;
     height: 50px;
+    margin-bottom: 140px;
     border-radius: 8px;
     &__heading{
         text-align: center;
         line-height: 50px;
         font-size: 1.8em;
-        padding-right: 5px;
    }
 }
 
-.loading span{
-    width: 8px;
-    height: 8px;
-    margin: 0 5px;
-    background-color: #fcca46;
-    border-radius: 50%;
-    display: inline-block;
-    animation-name: dots;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-.loading span:nth-child(2){
-    background-color: #ff8b57;
-    animation-delay: 0.4s;
-}
-
-.loading span:nth-child(3){
-    background-color: #57ffa0;
-    animation-delay: 0.8s;
-}
-
-@keyframes dots{
-    50%{
-        opacity: 0;
-        transform: scale(0.7) translateZ(10px)
-    }
-}
-
 .foot-main{
-    width: 75%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     padding-top: 50px;
     &__prev{
         background-color: $color-primary;
@@ -237,19 +185,10 @@ body{
 }
 .foot-main__heading, .foot-main__contact{
     font-size: 1.5em;
-    animation: thing 4s infinite;
-}
-
-@keyframes thing{
-    0%{ transform: rotate(0deg)}
-    3%{ transform: rotate(-5deg)}
-    4%{ transform: rotate(5deg)}
-    5%{ transform: rotate(0deg)}
-    100%{ transform: rotate(0deg)}
 }
 
                                         /*menu1*/
-.menu-header{
+.header-main__subtitle{
     font-size: 2em;
     padding-bottom: 20px;
     margin-top: -10px;
@@ -258,7 +197,8 @@ body{
 
 .menu-container{
     background-color:#e9c9c6;
-    width: 65%;
+    width: 38%;
+    margin-bottom: 150px;
     @include font-family(menu1);
 }
 
@@ -269,22 +209,22 @@ body{
     padding: 50px 0px 30px 0px;
 }
 
-.sec-container{
+.containt{
     padding: 0px 55px;
 }
 
-.menu-container__line{
+.containt-underline{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .svg-menu1__right{
-    width: 180px;
+    width: 200px;
 }
 
 .svg-menu1__left{
-    width: 180px;
+    width: 200px;
 }
 
 .menu-container__title{
@@ -294,20 +234,36 @@ body{
     margin: 0 auto;
 }
 
-.menu-container__text{
+.containt__text{
     width: 100%;
 }
 
-.menu-container__text tr{
+.containt__text tr{
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
 }
+.container-subline{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
 
-.menu-container-line__titl{
+.container-subline__titl{
     font-weight: bolder;
     font-size: 1.2em;
     margin: 0 auto;
+    &:hover + .container-subline-titl__subline{
+        transform: scale(1.1);
+    }
+}
+
+.container-subline-titl__subline{
+    background-color: black;
+    width: 60px;
+    height: 5px;
+    border-radius: 30%;
+    transform: scale(0.0);
 }
 
 .menu-container__footer{
@@ -325,23 +281,21 @@ body{
     top: 0;
 }
                                      /*menu2*/
-
+                                     
 .menu-container--menu2{
     background-color: rgb(250, 230, 242);
-    @include font-menu2(menu2);
 }
 
-.proj-prev__heading--menu2{
+.menu-cover__title--menu2{
     padding: 100px 0px 60px 0px;
-}
-
-.titl--menu2{
-    font-size: 1.1em;
 }
 
 .byline--menu2{
     padding: 20px 80px;
-    font-size: 0.9em;
+}
+
+.menu-container--menu2 section{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .titl--menu2{
@@ -349,26 +303,8 @@ body{
     align-items: center;
 }
 
-.line__title--menu2{
-    padding: 22px 0px;
-}
-
-svg{
-   display: none;
-}
-
-.sec-container{
-    
-    &:hover{
-       
-        svg{
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            display: block;
-            width: 180px;
-        }
-    }
+.svg-left--menu2, .svg-right--menu2{
+    width: 220px;
 }
 
 .sec-clbrown{
@@ -395,7 +331,7 @@ svg{
     padding: 100px 0px 60px 0px;
 }
 
-.sec-container--menu3{
+.containt--menu3{
     color: black;
 }
 
@@ -422,14 +358,50 @@ svg{
     padding: 55px 0px 60px 0px;
 }
 
-.menu-container__line img{
+.containt-underline img{
     width: 220px;
 }
 
-.sec-container--menu4{
+.containt--menu4{
     padding: 0px 0px;
 }
-.menu-container__text--menu4{
+.containt__text--menu4{
     padding: 20px 70px;
     font-size: 0.9em;;
+}
+
+.loading span{
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    background-color: #fcca46;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.loading span:nth-child(2){
+    background-color: #ff8b57;
+    animation-delay: 0.4s;
+}
+
+.loading span:nth-child(3){
+    background-color: #57ffa0;
+    animation-delay: 0.8s;
+}
+
+@keyframes dots{
+    50%{
+        opacity: 0;
+        transform: scale(0.7) translateZ(10px)
+    }
+}
+
+.artcle-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
