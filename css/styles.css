@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "chantelli_antiquaregular";
-  src: url("fonts/menu1/chantelli_antiqua-webfont.woff2") format("woff2"), url("fonts/menu1/chantelli_antiqua-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /*teal*/
 /*lime*/
 body {
@@ -46,9 +40,20 @@ body {
   margin: auto;
 }
 
+.menu-cover, .menu-container, .menu-cover__title {
+  background-color: #fde0dc;
+  color: #3a1411;
+  font-weight: bolder;
+}
+
+
+.menu-cover__title{
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
+}
+
 .menu-cover {
   box-shadow: 5px 5px 5px #8d8c8c;
-  background-color: #e9c9c6;
   margin-bottom: 50px;
   width: 40%;
   height: 400px;
@@ -57,60 +62,47 @@ body {
   justify-content: center;
   align-items: center;
 }
-.menu-cover__heading {
-  padding-top: 10px;
-  font-size: 0.8em;
+
+.img-note{
+  width: 60px;
 }
 
 .menu-cover {
-  font-size: 1.2em;
-  font-weight: bolder;
-  background-color: #e9c9c6;
   cursor: pointer;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 1000ms;
 }
-.menu-cover:hover {
-  transform: scale(1.15);
-  background-color: #faeaea;
-}
 
-.menu-cover__title, .menu-cover__byline {
+ .menu-cover__byline, .menu-container__title,
+ .containt-underline__title, .containt__text, .menu-container__footer {
+  font-family: 'Caveat', cursive;
   font-size: 1.2em;
-  font-family: "chantelli_antiquaregular";
 }
 
-.fa-music {
-  background: -webkit-linear-gradient(#f87575, #9b4949);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.menu-cover__byline{
+  font-size: 1.5em;
 }
 
 .menu-cover--menu2 {
-  background-color: #f8bee1;
-  font-family: "Arial Nova", serif;
+  font-family: 'Playfair Display', serif;
   color: chocolate;
   cursor: pointer;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 1000ms;
-}
-.menu-cover--menu2:hover {
-  transform: scale(1.15);
-  background-color: #fae6f2;
 }
 
 .menu-cover__title--menu2 {
-  padding: 0px;
+  font-size: 1.5em;
   background: linear-gradient(to right, #ce7f63, #a265acda, #3949AB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.menu-container__title--menu2{
+  padding: 100px 0px 60px 0px;
+}
+
 .menu-cover--menu3 {
   background-color: #c6cfd3;
-  font-family: "Monotype Corsiva";
   color: #0288D1;
   cursor: pointer;
   transform: scale(1);
@@ -123,19 +115,30 @@ body {
 }
 
 .menu-cover__title--menu3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
   background: linear-gradient(to right, #0e3ca8, #145386, #45bdf5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.menu-cover__byline--menu3{
+   font-family: 'Dancing Script', cursive;
+}
+
 .menu-cover--menu4 {
   background-color: #f0f6cf;
-  font-family: "MV Boli";
   color: #4CAF50;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 1000ms;
 }
+
+.menu-cover--menu4, .menu-cover__byline--menu4, .menu-cover__title--menu4,
+.containt-underline__title--menu4, .containt__text--menu4{
+  font-family: 'Kaushan Script', cursive;
+}
+
 .menu-cover--menu4:hover {
   transform: scale(1.15);
   background-color: white;
@@ -189,10 +192,10 @@ body {
 }
 
 .menu-container {
-  background-color: #e9c9c6;
-  width: 38%;
+  width: 35%;
   margin-bottom: 150px;
-  font-family: "chantelli_antiquaregular";
+  font-family: 'Playfair Display', serif;
+  color: #5e211b;
 }
 
 .menu-container__head {
@@ -212,19 +215,17 @@ body {
   justify-content: space-between;
 }
 
-.svg-menu1__right {
+.svg-menu1__right, .svg-menu1__left  {
   width: 200px;
 }
 
-.svg-menu1__left {
-  width: 200px;
-}
 
 .menu-container__title {
   font-size: 2em;
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
+ 
 }
 
 .containt__text {
@@ -243,17 +244,18 @@ body {
   flex-direction: column;
 }
 
-.containt-subline__titl {
+.containt-underline__title {
   font-weight: bolder;
-  font-size: 1.2em;
+  font-size: 1.7em;
   margin: 0 auto;
 }
-.containt-subline__titl:hover + .containt-subline-titl__subline {
+
+.containt-underline__title:hover + .containt-subline-titl__subline {
   transform: scale(1.1);
 }
 
 .containt-subline-titl__subline {
-  background-color: black;
+  background-color:#5e211b;
   width: 60px;
   height: 5px;
   border-radius: 30%;
@@ -261,9 +263,11 @@ body {
 }
 
 .menu-container__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5em;
   font-weight: bolder;
-  text-align: center;
   padding: 50px 0px;
 }
 
@@ -276,25 +280,29 @@ body {
 }
 
 /*menu2*/
-.menu-container--menu2 {
-  background-color: #fae6f2;
-}
 
-.menu-cover__title--menu2 {
-  padding: 100px 0px 60px 0px;
+.menu-cover--menu2, .menu-cover__byline--menu2,
+.menu-cover__title--menu2, .containt-underline--menu2,
+.containt__text-menu2{
+  font-family: 'Lora', serif;
 }
 
 .menu-container__byline--menu2 {
   padding: 20px 80px;
 }
 
-.menu-container--menu2 section {
-  font-family: "Times New Roman", Times, serif;
+.menu-cover--menu2, .menu-container--menu2{
+  background-color: #fae6f2;
 }
 
 .containt-underline__title--menu2 {
   display: flex;
   align-items: center;
+  font-size: 1em;
+}
+
+.containt__text-menu2{
+  font-size: 1em;
 }
 
 .svg-left--menu2, .svg-right--menu2 {
@@ -321,6 +329,7 @@ body {
 }
 
 .menu-container__title--menu3 {
+  font-family: 'Dancing Script', cursive;
   padding: 100px 0px 60px 0px;
 }
 
@@ -332,7 +341,12 @@ body {
   padding: 0px 30px;
 }
 
+.containt-underline__title--menu3{
+font-family: 'Dancing Script', cursive;
+}
+
 .menu-container__byline--menu3 {
+  font-family: 'Dancing Script', cursive;
   padding: 30px 80px;
   font-size: 0.9em;
 }
@@ -361,7 +375,7 @@ body {
 
 .containt__text--menu4 {
   padding: 20px 70px;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .loading span {
