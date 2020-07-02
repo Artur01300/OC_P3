@@ -60,6 +60,19 @@ body {
   align-items: center;
 }
 
+.menu-cover__opac{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s;
+}
+
+.menu-cover__opac:hover{
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
 .menu-cover__imgnote{
   width: 60px;
 }
@@ -85,7 +98,7 @@ body {
 }
 
 .menu-cover__title--menu2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   background: linear-gradient(to right, #ce7f63, #a265acda, #3949AB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -167,6 +180,34 @@ body {
   padding: 0px 20px;
 }
 
+.foot-main__heading:hover{
+  -webkit-animation: shake 300ms ease-in-out 300ms infinite alternate;
+}
+
+@-webkit-keyframes shake{
+  form{
+    -webkit-transform: rotate(15deg);
+  }
+  to{
+    -webkit-transform: rotate(-15deg);
+    -webkit-transform-origin: center center;
+  }
+}
+
+.foot-main__contact:hover{
+  -webkit-animation: shake 300ms ease-in-out 300ms infinite alternate;
+}
+
+@-webkit-keyframes shake{
+  form{
+    -webkit-transform: rotate(15deg);
+  }
+  to{
+    -webkit-transform: rotate(-15deg);
+    -webkit-transform-origin: center center;
+  }
+}
+
 .foot-main__heading a, .foot-main__contact a{
   text-decoration: none;
   color: #CDDC39;
@@ -190,6 +231,11 @@ body {
   font-family: 'Playfair Display', serif;
   color: #5e211b;
 }
+
+.menu-container{
+  box-shadow: 0px 0px 10px -3px #8d8c8c;
+}
+
 
 .menu-container__head {
   display: flex;
@@ -364,6 +410,7 @@ font-family: 'Dancing Script', cursive;
   display: inline-block;
   animation-name: dots;
   animation-duration: 2s;
+  cursor: pointer;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
