@@ -33,7 +33,7 @@ body {
 }
 
 .grid {
-  width: 700px;
+  max-width: 700px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -437,4 +437,24 @@ font-family: 'Dancing Script', cursive;
   justify-content: center;
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media screen and (max-width: 800px) {
+  .grid{
+    flex-direction: column;
+  }
+
+.link{
+  width: 280px;
+}
+
+.foot-main__prev{
+  font-size: small;
+}
+.header-main__heading{
+  font-size: 2em;
+}
+
+.menu-container{
+  
+}
+}
+
