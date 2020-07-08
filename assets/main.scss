@@ -17,8 +17,8 @@ body {
   width: 100%;
   margin-bottom: 50px;
   height: 120px;
-  background-color: #009688;
-  color: #fcca46;
+  background-color: $color-primary;
+  color: $color-ohmyfood;
   display: flex;
   align-items: center;
 }
@@ -30,7 +30,7 @@ body {
 
 .header-main__heading a {
   text-decoration: none;
-  color: #CDDC39;
+  color: $color-ohmyfood;
 }
 
 .grid {
@@ -47,7 +47,7 @@ body {
 }
 
 .menu-cover__title{
-  font-family: 'Caveat', cursive;
+  font-family: 'font-menu1', cursive;
   font-size: 2em;
 }
 
@@ -86,7 +86,7 @@ body {
 
  .menu-cover__byline, .menu-container__title,
  .containt-underline__title, .containt__text, .menu-container__footer {
-  font-family: 'Caveat', cursive;
+  font-family: 'font-menu1', cursive;
   font-size: 1.3em;
 }
 
@@ -95,12 +95,11 @@ body {
 }
 
 .menu-cover--menu2 {
-  font-family: 'Playfair Display', serif;
   color: chocolate;
 }
 
 .menu-cover__title--menu2 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   background: linear-gradient(to right, #ce7f63, #a265acda, #3949AB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -111,35 +110,38 @@ body {
 }
 
 .menu-cover--menu3 {
-  background-color: #c6cfd3;
+  background-color: #e2e5e5;
   color: #0288D1;
 }
 
 .menu-cover__title--menu3 {
-  font-family: 'Dancing Script', cursive;
   font-size: 1.8em;
   background: linear-gradient(to right, #0e3ca8, #145386, #45bdf5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.menu-cover__title--menu3, .menu-cover__byline--menu3,.menu-container__title--menu3,
+.containt-underline__title--menu3, .menu-container__byline--menu3 {
+  font-family: 'font-menu3', cursive;
+}
+
 .menu-cover__byline--menu3{
-   font-family: 'Dancing Script', cursive;
    font-size: 1.8em;
 }
 
 .containt__text--menu3{
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .menu-cover--menu4 {
-  background-color: #f0f6cf;
+  background-color: rgb(241, 239, 239);
   color: #41963c;
 }
 
 .menu-cover--menu4, .menu-cover__byline--menu4, .menu-cover__title--menu4,
 .containt-underline__title--menu4, .containt__text--menu4{
-  font-family: 'Kalam', cursive;
+  font-family: 'font-menu4', cursive;
 }
 
 .menu-cover__title--menu4 {
@@ -150,7 +152,7 @@ body {
 }
 
 .containt_svg--menu4{
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .containt-underline__title--menu4 {
@@ -167,8 +169,8 @@ body {
 }
 
 .artcle-main {
-  background-color: #009688;
-  color: #fcca46;
+  background-color: $color-primary;
+  color: $color-ohmyfood;
   width: 280px;
   height: 50px;
   margin-bottom: 140px;
@@ -187,7 +189,7 @@ body {
   padding-top: 50px;
 }
 .foot-main__prev {
-  background-color: #009688;
+  background-color: $color-primary;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -196,7 +198,7 @@ body {
 
 .btn-footer a{
   text-decoration: none;
-  color: #fcca46;
+  color: $color-ohmyfood;
   font-size: 1.5em;
 }
 
@@ -220,7 +222,6 @@ body {
   box-shadow: 0px 0px 10px -3px #8d8c8c;
 }
 
-
 .menu-container__head {
   display: flex;
   flex-direction: column;
@@ -241,7 +242,6 @@ body {
 .svg-menu1__right, .svg-menu1__left  {
   width: 35%;
 }
-
 
 .menu-container__title {
   font-size: 2em;
@@ -299,11 +299,10 @@ body {
 }
 
 /*menu2*/
-
 .menu-cover--menu2, .menu-cover__byline--menu2,
 .menu-cover__title--menu2, .containt-underline--menu2,
-.containt__text-menu2{
-  font-family: 'Lora', serif;
+.containt-underline__title--menu2, .containt__text-menu2{
+  font-family: 'font-menu2', serif;
 }
 
 .menu-container__byline--menu2 {
@@ -355,7 +354,7 @@ body {
 
 /*menu3*/
 .menu-container--menu3 {
-  background-color: #CFD8DC;
+  background-color:  #e2e5e5;
   padding-bottom: 80px;
 }
 
@@ -372,7 +371,6 @@ body {
 }
 
 .menu-container__title--menu3 {
-  font-family: 'Dancing Script', cursive;
   padding: 100px 0px 60px 0px;
 }
 
@@ -384,13 +382,8 @@ body {
   padding: 0px 30px;
 }
 
-.containt-underline__title--menu3{
-font-family: 'Dancing Script', cursive;
-}
-
 .menu-container__byline--menu3 {
-  font-family: 'Dancing Script', cursive;
-  padding: 30px 80px;
+  padding: 30px 60px;
   font-size: 0.9em;
 }
 

@@ -1,0 +1,29 @@
+$color-primary: #009688; /*teal*/
+$color-ohmyfood: #fcca46; /*lime*/
+
+@font-face {
+    font-family: 'font-menu1';
+    src: url("fonts/menu1/Caveat-Bold.ttf"), url("fonts/menu1/Caveat-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'font-menu2';
+    src: url("fonts/menu2/Lora-VariableFont_wght.ttf"), url("fonts/menu2/Lora-Italic-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'font-menu3';
+    src: url("fonts/menu3/DancingScript-Regular.ttf"), url("fonts/menu3/DancingScript-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'font-menu4';
+    src: url("fonts/menu4/Kalam-Regular.ttf"), url("fonts/menu4/Kalam-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }

@@ -1,13 +1,13 @@
 .btn-footer:hover{
-    animation: shake 100ms ease-in-out 300ms infinite alternate;
+    animation: shake 50ms ease-in-out 100ms infinite alternate;
   }
   
   @keyframes shake{
     from{
-      transform: rotate(10deg);
+      transform: rotate(5deg);
     }
     to{
-      transform: rotate(-10deg);
+      transform: rotate(-5deg);
       transform-origin: center center;
     }
   }

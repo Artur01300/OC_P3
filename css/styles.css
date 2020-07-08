@@ -1,13 +1,13 @@
 .btn-footer:hover {
-  animation: shake 100ms ease-in-out 300ms infinite alternate;
+  animation: shake 50ms ease-in-out 100ms infinite alternate;
 }
 
 @keyframes shake {
   from {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
   }
   to {
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
     transform-origin: center center;
   }
 }
@@ -47,6 +47,32 @@
     transform: scale(0.7) translateZ(10px);
   }
 }
+/*teal*/
+/*lime*/
+@font-face {
+  font-family: "font-menu1";
+  src: url("fonts/menu1/Caveat-Bold.ttf"), url("fonts/menu1/Caveat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font-menu2";
+  src: url("fonts/menu2/Lora-VariableFont_wght.ttf"), url("fonts/menu2/Lora-Italic-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font-menu3";
+  src: url("fonts/menu3/DancingScript-Regular.ttf"), url("fonts/menu3/DancingScript-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font-menu4";
+  src: url("fonts/menu4/Kalam-Regular.ttf"), url("fonts/menu4/Kalam-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: auto;
   width: 100%;
@@ -76,7 +102,7 @@ body {
 
 .header-main__heading a {
   text-decoration: none;
-  color: #CDDC39;
+  color: #fcca46;
 }
 
 .grid {
@@ -93,7 +119,7 @@ body {
 }
 
 .menu-cover__title {
-  font-family: "Caveat", cursive;
+  font-family: "font-menu1", cursive;
   font-size: 2em;
 }
 
@@ -132,7 +158,7 @@ body {
 
 .menu-cover__byline, .menu-container__title,
 .containt-underline__title, .containt__text, .menu-container__footer {
-  font-family: "Caveat", cursive;
+  font-family: "font-menu1", cursive;
   font-size: 1.3em;
 }
 
@@ -141,12 +167,11 @@ body {
 }
 
 .menu-cover--menu2 {
-  font-family: "Playfair Display", serif;
   color: chocolate;
 }
 
 .menu-cover__title--menu2 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   background: linear-gradient(to right, #ce7f63, #a265acda, #3949AB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -157,35 +182,38 @@ body {
 }
 
 .menu-cover--menu3 {
-  background-color: #c6cfd3;
+  background-color: #e2e5e5;
   color: #0288D1;
 }
 
 .menu-cover__title--menu3 {
-  font-family: "Dancing Script", cursive;
   font-size: 1.8em;
   background: linear-gradient(to right, #0e3ca8, #145386, #45bdf5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.menu-cover__title--menu3, .menu-cover__byline--menu3, .menu-container__title--menu3,
+.containt-underline__title--menu3, .menu-container__byline--menu3 {
+  font-family: "font-menu3", cursive;
+}
+
 .menu-cover__byline--menu3 {
-  font-family: "Dancing Script", cursive;
   font-size: 1.8em;
 }
 
 .containt__text--menu3 {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .menu-cover--menu4 {
-  background-color: #f0f6cf;
+  background-color: #f1efef;
   color: #41963c;
 }
 
 .menu-cover--menu4, .menu-cover__byline--menu4, .menu-cover__title--menu4,
 .containt-underline__title--menu4, .containt__text--menu4 {
-  font-family: "Kalam", cursive;
+  font-family: "font-menu4", cursive;
 }
 
 .menu-cover__title--menu4 {
@@ -196,7 +224,7 @@ body {
 }
 
 .containt_svg--menu4 {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .containt-underline__title--menu4 {
@@ -345,8 +373,8 @@ body {
 /*menu2*/
 .menu-cover--menu2, .menu-cover__byline--menu2,
 .menu-cover__title--menu2, .containt-underline--menu2,
-.containt__text-menu2 {
-  font-family: "Lora", serif;
+.containt-underline__title--menu2, .containt__text-menu2 {
+  font-family: "font-menu2", serif;
 }
 
 .menu-container__byline--menu2 {
@@ -398,7 +426,7 @@ body {
 
 /*menu3*/
 .menu-container--menu3 {
-  background-color: #CFD8DC;
+  background-color: #e2e5e5;
   padding-bottom: 80px;
 }
 
@@ -415,7 +443,6 @@ body {
 }
 
 .menu-container__title--menu3 {
-  font-family: "Dancing Script", cursive;
   padding: 100px 0px 60px 0px;
 }
 
@@ -427,13 +454,8 @@ body {
   padding: 0px 30px;
 }
 
-.containt-underline__title--menu3 {
-  font-family: "Dancing Script", cursive;
-}
-
 .menu-container__byline--menu3 {
-  font-family: "Dancing Script", cursive;
-  padding: 30px 80px;
+  padding: 30px 60px;
   font-size: 0.9em;
 }
 
