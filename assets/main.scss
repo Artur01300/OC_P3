@@ -84,11 +84,13 @@ body {
   text-decoration: none;
 }
 
- .menu-cover__byline, .menu-container__title,
- .containt-underline__title, .containt__text, .menu-container__footer {
+ .menu-cover__byline, .containt-underline__title, 
+ .containt__text, .menu-container__footer {
   font-family: 'font-menu1', cursive;
   font-size: 1.3em;
 }
+
+.containt-underline
 
 .menu-cover__byline{
   font-size: 1.5em;
@@ -110,7 +112,7 @@ body {
 }
 
 .menu-cover--menu3 {
-  background-color: #e2e5e5;
+  background-color: #e6ebebb7;
   color: #0288D1;
 }
 
@@ -135,7 +137,7 @@ body {
 }
 
 .menu-cover--menu4 {
-  background-color: rgb(241, 239, 239);
+  background-color: #edf3f3b7;
   color: #41963c;
 }
 
@@ -202,7 +204,6 @@ body {
   font-size: 1.5em;
 }
 
-
 /*menu1*/
 .header-main__subtitle {
   font-size: 2em;
@@ -212,7 +213,7 @@ body {
 }
 
 .menu-container {
-  max-width: 700px;
+  width: 700px;
   margin-bottom: 150px;
   font-family: 'Playfair Display', serif;
   color: #5e211b;
@@ -244,11 +245,18 @@ body {
 }
 
 .menu-container__title {
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 2.5em;
   text-align: center;
   margin: 0 auto;
- 
+}
+
+.menu-container__title, .menu-container__notetext{
+  font-family: 'font-menu1__title', cursive;
+  font-weight:  500;
+}
+
+.menu-container__notetext{
+  font-size: 1.4em;
 }
 
 .containt__text {
@@ -286,7 +294,8 @@ body {
 }
 
 .containt-underline__title:hover + .containt-subline-titl__subline{
-  transform: scale(1);
+  transform: scaleX(1);
+  transform-origin: left 50%;
 }
 
 .menu-container__footer {
@@ -354,7 +363,7 @@ body {
 
 /*menu3*/
 .menu-container--menu3 {
-  background-color:  #e2e5e5;
+  background-color:   #e6ebebb7;
   padding-bottom: 80px;
 }
 
@@ -399,7 +408,7 @@ body {
 
 .menu-container__title--menu4 {
   padding: 55px 0px 60px 0px;
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 
 .containt--menu4 {
@@ -435,7 +444,7 @@ body {
 @media screen and (max-width: 600px) {
 
   .containt, .menu-container__byline--menu2,
-  .menu-container__byline--menu3, .containt__text--menu4{
+  .menu-container__byline--menu3, {
     padding: 0px 20px;
   }
 
@@ -444,17 +453,20 @@ body {
   }
 
   .btn-footer{
-    font-size: 1.2em;
+    font-size: .8em;
   }
 
+.menu-container__title--menu2{
+  font-size: 2em;
+}
+
   .containt-underline__title--menu2{
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .svg-left--menu2, .svg-right--menu2{
-    width: 21%;
+    width: 20%;
   }
-
 
   .svg-left--menu3, .svg-right--menu3{
     width: 18%;
@@ -471,6 +483,10 @@ body {
   .containt_svg--menu4 {
     padding: 0px;
     width: 20%;
+  }
+
+  .containt__text--menu4{
+    padding: 0px 5px;
   }
 
   .containt_svg--menu4 img{
