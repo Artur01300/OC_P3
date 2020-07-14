@@ -1,15 +1,20 @@
-.btn-footer:hover{
-    animation: shake 50ms ease-in-out 100ms infinite alternate;
+.artcle-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container--mention{
+    width: 80%;
+    padding-bottom: 100px;
   }
   
-  @keyframes shake{
-    from{
-      transform: rotate(5deg);
-    }
-    to{
-      transform: rotate(-5deg);
-      transform-origin: center center;
-    }
+  .mention-header__title{
+    font-size: 2em;
+  }
+  
+  .mention-text {
+   list-style-type: none;
+   padding-left: 0px;
   }
 
   .btn-prochainement{
@@ -39,12 +44,5 @@
   }
   
   .artcle-main:hover span:nth-child(3) {
-    animation-delay: 0.7s;
-  }
-  
-  @keyframes dots {
-    50% {
-      
-      transform: scale(0.7) translateY(10px);
-    }
+    animation-delay: 0.8s;
   }
