@@ -14,7 +14,6 @@
   }
   
   @media screen and (max-width: 600px) {
-  
     .header-main__heading{
       font-size: 3em;
     }
@@ -23,9 +22,18 @@
     .menu-container__byline--menu3 {
       padding: 0px 20px;
     }
-  
-    .svg-menu1__left, .svg-menu1__right{
-      width: 26%;
+    
+    .svg-menu1, .svg-menu2, .svg-menu3{
+      width: 20%;
+    }
+
+    .containt_svg--menu4 {
+      padding: 0px;
+      width: 20%;
+    }
+
+    .containt_svg--menu4 img{
+      width: 100%;
     }
   
     .btn-footer{
@@ -37,38 +45,21 @@
   }
   
     .containt-underline__title--menu2{
-      font-size: 1.1em;
-    }
-  
-    .svg-left--menu2, .svg-right--menu2{
-      width: 20%;
-    }
-  
-    .svg-left--menu3, .svg-right--menu3{
-      width: 18%;
+      font-size: 1em;
     }
   
     .containt-underline__title--menu3{
-      font-size: 1.6em;
+      font-size: 1.3em;
     }
    
     .containt-underline__title--menu4{
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
-    
-    .containt_svg--menu4 {
-      padding: 0px;
-      width: 20%;
-    }
-  
+      
     .containt__text--menu4{
       padding: 0px 5px;
     }
-  
-    .containt_svg--menu4 img{
-      width: 100%;
-    }
-  
+    
     .mention-header__title{
       font-size: 1.5em;
     }

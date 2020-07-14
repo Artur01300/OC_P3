@@ -1,18 +1,17 @@
 .menu-container--menu3 {
-    background-color:   #e6ebebb7;
     padding-bottom: 80px;
   }
   
   .subline--menu3-blue{
-    background-color: #123ea5;
+    background-color: $cmenu3-part1;
   }
   
   .subline--menu3-b_light{
-    background-color: #2196F3;
+    background-color: $cmenu3-part2;
   }
   
   .subline--menu3-b_lighter{
-    background-color: #45bdf5;
+    background-color: $cmenu3-part2;
   }
   
   .menu-container__title--menu3 {

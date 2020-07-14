@@ -1,13 +1,20 @@
 @import "utils/variables";
 @import "utils/typos";
+
 @import "utils/animation";
+
 @import "layout/header";
+
 @import "base/container.scss";
 @import "base/menu_cover.scss";
+
 @import "menu/la-note-enchantee";
 @import "menu/le-chic-a-la-francaise";
 @import "menu/la-palette-du-gout";
 @import "menu/le-delice-des-papilles";
+
+@import "layout/mention";
 @import "layout/article";
 @import "layout/footer";
+
 @import "layout/media.scss";

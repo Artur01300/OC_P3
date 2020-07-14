@@ -1,7 +1,7 @@
 .menu-cover--menu2, .menu-cover__byline--menu2,
 .menu-cover__title--menu2, .containt-underline--menu2,
 .containt-underline__title--menu2, .containt__text-menu2{
-  font-family: 'font-menu2', serif;
+  font-family: 'menu2-lora-vf', serif;
 }
 
 .menu-cover__byline--menu2{
@@ -13,32 +13,27 @@
 }
 
 .menu-cover--menu2, .menu-container--menu2{
-  background-color: #fae6f2;
+  background-color: $bcmenu2;
 }
-
-.sec-clbrown {
-  color: #ce7f63;
-}
-
 .sec-clpurple {
-  color: #9C27B0;
+  color: $cmenu2-part2;
 }
 
 .sec-clindigo {
-  color: #3949AB;
+  color: $cmenu2-part3;
   padding-bottom: 80px;
 }
 
 .subline--menu2-clbrown{
-  background-color: #ce7f63;
+  background-color: $cmenu2-part1;
 }
 
 .subline--menu2-clpurple{
-  background-color: #9C27B0;
+  background-color: $cmenu2-part2;
 }
 
 .subline--menu2-clindigo{
-  background-color: #3949AB;
+  background-color: $cmenu2-part3;
 }
 
 .containt-underline__title--menu2 {

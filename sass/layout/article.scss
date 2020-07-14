@@ -1,48 +1,33 @@
-.artcle-main {
+.article-main {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .container--mention{
-    width: 80%;
-    padding-bottom: 100px;
-  }
-  
-  .mention-header__title{
-    font-size: 2em;
-  }
-  
-  .mention-text {
-   list-style-type: none;
-   padding-left: 0px;
-  }
-
-  .btn-prochainement{
+      .btn-prochainement{
     padding-right: 20px;
     font-size: 1.5em;
     cursor: pointer;
+    }
+    .loading span {
+      width: 8px;
+      height: 8px;
+      margin: 0 5px;
+      background-color: #fcca46;
+      border-radius: 50%;
+      display: inline-block;
+    }
   }
   
-  .loading span {
-    width: 8px;
-    height: 8px;
-    margin: 0 5px;
-    background-color: #fcca46;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  .artcle-main:hover span {
+  .article-main:hover span {
     animation-name: dots;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
   
-  .artcle-main:hover span:nth-child(2) {
+  .article-main:hover span:nth-child(2) {
     animation-delay: 0.4s;
   }
   
-  .artcle-main:hover span:nth-child(3) {
+  .article-main:hover span:nth-child(3) {
     animation-delay: 0.8s;
   }
