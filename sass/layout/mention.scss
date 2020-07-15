@@ -1,11 +1,12 @@
 .container--mention{
     width: 80%;
     padding-bottom: 100px;
-    .mention-header__title{
-        font-size: 2em;
-        .mention-text {
-            list-style-type: none;
-            padding-left: 0px;
-        }
-    }
+}
+.mention-header__title{
+    font-size: 2em;
+}
+
+.mention-text {
+    list-style-type: none;
+    padding-left: 0px;
 }
