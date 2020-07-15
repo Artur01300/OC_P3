@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch sass/main.scss css/styles.css --style compressed",
-    "prefix": "postcss css/styles.css --use autoprefixer -d css/prefixed"
+    "prefix": "postcss css/styles.css --use autoprefixer -o css/all.css"
+
   },
   "author": "",
   "license": "ISC",

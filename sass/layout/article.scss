@@ -1,33 +1,42 @@
 .article-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-      .btn-prochainement{
-    padding-right: 20px;
-    font-size: 1.5em;
-    cursor: pointer;
-    }
-    .loading span {
-      width: 8px;
-      height: 8px;
-      margin: 0 5px;
-      background-color: #fcca46;
-      border-radius: 50%;
-      display: inline-block;
-    }
-  }
+  background-color: $color-primary;
+  color: $color-ohmyfood;
+  width: 280px;
+  height: 50px;
+  margin-bottom: 140px;
+  border-radius: 8px;
+}
+.article-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-prochainement{
+  padding-right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.loading span {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: #fcca46;
+  border-radius: 50%;
+  display: inline-block;
+    
+}
   
-  .article-main:hover span {
-    animation-name: dots;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
+.article-main:hover span {
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
   
-  .article-main:hover span:nth-child(2) {
-    animation-delay: 0.4s;
-  }
+.article-main:hover span:nth-child(2) {
+  animation-delay: 0.4s;
+}
   
-  .article-main:hover span:nth-child(3) {
-    animation-delay: 0.8s;
-  }
+.article-main:hover span:nth-child(3) {
+  animation-delay: 0.8s;
+}

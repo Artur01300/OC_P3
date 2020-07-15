@@ -51,7 +51,6 @@
   display: flex;
   align-items: center;
 }
-
 .header-main__heading {
   font-size: 4em;
   margin: 0 auto;
@@ -62,29 +61,17 @@
   color: #fcca46;
 }
 
-.container--mention {
-  width: 80%;
-  padding-bottom: 100px;
-}
-
-.mention-header__title {
-  font-size: 2em;
-}
-
-.mention-text {
-  list-style-type: none;
-  padding-left: 0px;
-}
-
 body {
   margin: auto;
 }
-body .container {
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .container .grid {
+
+.grid {
   max-width: 700px;
   display: flex;
   justify-content: space-around;
@@ -97,8 +84,17 @@ body .container .grid {
   font-weight: bolder;
 }
 
-.menu-cover__title {
+.menu-cover__title, .menu-cover__byline, .containt-underline__title,
+.containt__text, .menu-container__footer {
   font-family: "menu1-caveat-Bold", cursive;
+}
+
+.menu-cover__byline, .containt-underline__title,
+.containt__text, .menu-container__footer {
+  font-size: 1.3em;
+}
+
+.menu-cover__title {
   font-size: 2em;
 }
 
@@ -111,7 +107,6 @@ body .container .grid {
   justify-content: center;
   align-items: center;
 }
-
 .menu-cover__opac {
   display: flex;
   flex-direction: column;
@@ -133,12 +128,6 @@ body .container .grid {
 .link {
   width: 40%;
   text-decoration: none;
-}
-
-.menu-cover__byline, .containt-underline__title,
-.containt__text, .menu-container__footer {
-  font-family: "menu1-caveat-Bold", cursive;
-  font-size: 1.3em;
 }
 
 .menu-cover__byline {
@@ -222,21 +211,6 @@ body .container .grid {
   font-size: 1em;
 }
 
-.article-main {
-  background-color: #009688;
-  color: #fcca46;
-  width: 280px;
-  height: 50px;
-  margin-bottom: 140px;
-  border-radius: 8px;
-}
-
-.article-main__heading {
-  text-align: center;
-  line-height: 50px;
-  font-size: 1.8em;
-}
-
 .header-main__subtitle {
   font-size: 2em;
   padding-bottom: 40px;
@@ -248,12 +222,8 @@ body .container .grid {
   width: 700px;
   margin-bottom: 150px;
   color: #5e211b;
-}
-
-.menu-container {
   box-shadow: 0px 0px 10px -3px #8d8c8c;
 }
-
 .menu-container__head {
   display: flex;
   flex-direction: column;
@@ -264,7 +234,6 @@ body .container .grid {
 .containt {
   padding: 0px 55px;
 }
-
 .containt-underline {
   display: flex;
   align-items: center;
@@ -284,10 +253,6 @@ body .container .grid {
 .menu-container__title, .menu-container__notetext {
   font-family: "menu1-Devonshire-Reg__title", cursive;
   font-weight: 500;
-}
-
-.menu-container__notetext {
-  font-size: 1.4em;
 }
 
 .containt__text {
@@ -336,6 +301,10 @@ body .container .grid {
   font-size: 1.5em;
   font-weight: bolder;
   padding: 50px 0px;
+}
+
+.menu-container__notetext {
+  font-size: 1.4em;
 }
 
 .menu-cover--menu2, .menu-cover__byline--menu2,
@@ -460,16 +429,27 @@ body .container .grid {
 }
 
 .article-main {
+  background-color: #009688;
+  color: #fcca46;
+  width: 280px;
+  height: 50px;
+  margin-bottom: 140px;
+  border-radius: 8px;
+}
+
+.article-main {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.article-main .btn-prochainement {
+
+.btn-prochainement {
   padding-right: 20px;
   font-size: 1.5em;
   cursor: pointer;
 }
-.article-main .loading span {
+
+.loading span {
   width: 8px;
   height: 8px;
   margin: 0 5px;

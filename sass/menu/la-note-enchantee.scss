@@ -9,27 +9,22 @@
     width: 700px;
     margin-bottom: 150px;
     color: #5e211b;
-  }
-  
-  .menu-container{
     box-shadow: 0px 0px 10px -3px #8d8c8c;
-  }
-  
-  .menu-container__head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0px 30px 0px;
+    &__head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0px 30px 0px;
+    }
   }
   
   .containt {
     padding: 0px 55px;
-  }
-  
-  .containt-underline {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    &-underline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
   
   .svg-menu1__right, .svg-menu1__left {
@@ -46,11 +41,7 @@
     font-family: 'menu1-Devonshire-Reg__title', cursive;
     font-weight:  500;
   }
-  
-  .menu-container__notetext{
-    font-size: 1.4em;
-  }
-  
+    
   .containt__text {
     width: 100%;
     text-align: left;
@@ -97,4 +88,8 @@
     font-size: 1.5em;
     font-weight: bolder;
     padding: 50px 0px;
+  }
+
+  .menu-container__notetext{
+    font-size: 1.4em;
   }
