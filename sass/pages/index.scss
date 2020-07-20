@@ -1,0 +1,107 @@
+.menu-cover, .menu-container, .menu-cover__title {
+  background-color: $bcmenu1;
+  color: $cmenu1;
+  font-weight: bolder;
+}
+.menu-cover__title, .menu-cover__byline, .containt-underline__title, 
+.containt__text, .menu-container__footer {
+  font-family: 'menu1-caveat-Bold', cursive;
+}
+.menu-cover__byline, .containt-underline__title, 
+.containt__text, .menu-container__footer {
+  font-size: 1.3em;
+}
+.menu-cover__title{
+  font-size: 2em;
+}
+.menu-cover {
+  box-shadow: 1px 1px 10px #8d8c8c;
+  margin-bottom: 40px;
+  max-width: 290px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__opac{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    padding-bottom: 40px;
+  }
+} 
+.menu-cover:hover .menu-cover__opac{
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+.menu-cover__imgnote{
+  width: 60px;
+}
+.link {
+  width: 40%;
+  text-decoration: none;
+}
+.menu-cover__byline{
+  font-size: 1.5em;
+}
+.menu-cover--menu2, .sec-clbrown {
+  color: $cmenu2-part1;
+}
+.menu-cover__title--menu2 {
+  font-size: 1.3em;
+  background: $cmenu2-title__gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-container__title--menu2{
+  padding: 100px 0px 60px 0px;
+}
+.menu-cover--menu3, .menu-container--menu3{
+  background-color: $bcmenu3;
+  color: #0288D1;
+}
+.menu-cover__title--menu3 {
+  font-size: 1.8em;
+  background: $cmenu3-title__gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-cover__title--menu3, .menu-cover__byline--menu3,.menu-container__title--menu3, .containt-underline__title--menu3, .menu-container__byline--menu3 {
+  font-family: 'menu3-dancingscpt-reg', cursive;
+} 
+.menu-cover__byline--menu3{
+    font-size: 1.8em;
+}
+.containt__text--menu3{
+  font-size: 1.5em;
+}
+.menu-cover--menu4, .menu-container--menu4 {
+  background-color: $bcmenu4;
+  color: $cmenu4;
+}
+.menu-cover--menu4, .menu-cover__byline--menu4, .menu-cover__title--menu4, .containt-underline__title--menu4, .containt__text--menu4 {
+  font-family: 'menu4-kalem-reg', cursive;
+}
+.menu-cover__byline--menu4 {
+  font-size: 1.5em;
+}
+.menu-cover__title--menu4, .subline--menu4 {
+  background: $cmenu4-title__gradient;
+}
+.menu-cover__title--menu4 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.7em;
+}
+.containt_svg--menu4{
+  padding: 0px 10px;
+}
+.containt-underline__title--menu4 {
+  font-size: 1.6em;
+}
+.containt-underline--menu4{
+  text-align: center;
+  font-size: 1em;
+}

@@ -1,11 +1,11 @@
 {
-  "name": "p3v2-4",
+  "name": "OhMyFood_0.1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/main.scss css/styles.css --style compressed",
-    "prefix": "postcss css/styles.css --use autoprefixer -o css/all.css"
+    "dev": "sass --watch sass/main.scss css/styles.css --style compressed",
+    "prod": "postcss css/styles.css --use autoprefixer -o css/all.css"
 
   },
   "author": "",

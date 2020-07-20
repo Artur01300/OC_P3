@@ -3,18 +3,18 @@
 
 @import "utils/animation";
 
-@import "layout/header";
+@import "base/header";
 
 @import "base/container.scss";
-@import "base/menu_cover.scss";
+@import "pages/index.scss";
 
-@import "menus/la-note-enchantee";
-@import "menus/le-chic-a-la-francaise";
-@import "menus/la-palette-du-gout";
-@import "menus/le-delice-des-papilles";
+@import "pages/la-note-enchantee";
+@import "pages/le-chic-a-la-francaise";
+@import "pages/la-palette-du-gout";
+@import "pages/le-delice-des-papilles";
 
-@import "layout/mention";
-@import "layout/article";
-@import "layout/footer";
+@import "pages/mention";
+@import "base/article";
+@import "base/footer";
 
-@import "layout/media.scss";
+@import "base/media.scss";

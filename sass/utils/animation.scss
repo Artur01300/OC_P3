@@ -1,15 +1,14 @@
 @keyframes shake{
-    from{
-      transform: rotate(5deg);
-    }
-    to{
-      transform: rotate(-5deg);
-      transform-origin: center center;
-    }
+  from{
+    transform: rotate(5deg);
   }
-
-  @keyframes dots {
-    50% {
-      transform: scale(0.7) translateY(10px);
-    }
+  to{
+    transform: rotate(-5deg);
+    transform-origin: center center;
   }
+}
+@keyframes dots {
+  50% {
+    transform: scale(0.7) translateY(10px);
+  }
+}

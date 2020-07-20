@@ -1,0 +1,23 @@
+.foot-main {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 50px;
+  &__prev {
+    background-color: $color-primary;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+}
+.btn-footer a{
+  text-decoration: none;
+  color: $color-ohmyfood;
+  font-size: 1.5em;
+}
+.btn-footer:hover{
+  animation: shake 50ms ease-in-out 100ms infinite alternate;
+}
