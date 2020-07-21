@@ -5,15 +5,15 @@ Début de formation le 23/05/2020 [développeur web](https://openclassrooms.com/
 Projet 3 : Dynamisez une page web avec des animations CSS
 
 ### Contraintes
-● Le développement devra se faire en CSS.
-● L’ensemble du site devra être responsive.
-● Le page HTML devra passer la validation w3c sans erreur.
-● Aucun framework ne devra être utilisé.
-● Le code CSS passe la validation w3c CSS.
-● Des règles CSS @media et/ou des feuilles de styles dédiées identifiées par un
+- Le développement devra se faire en CSS.
+- L’ensemble du site devra être responsive.
+- Le page HTML devra passer la validation w3c sans erreur.
+- Aucun framework ne devra être utilisé.
+- Le code CSS passe la validation w3c CSS.
+- Des règles CSS @media et/ou des feuilles de styles dédiées identifiées par un
   attribut media doivent être utilisées.
   Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
-● Le site doit être parfaitement compatible avec les dernières versions desktop de
+- Le site doit être parfaitement compatible avec les dernières versions desktop de
   Chrome, Firefox et Safari.
 
 ### Livrables attendus
