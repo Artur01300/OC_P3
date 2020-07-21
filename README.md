@@ -14,7 +14,7 @@ Projet 3 : Dynamisez une page web avec des animations CSS
   attribut media doivent être utilisées.
   Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
 ● Le site doit être parfaitement compatible avec les dernières versions desktop de
-Chrome, Firefox et Safari.
+  Chrome, Firefox et Safari.
 
 ### Livrables attendus
 Un site web comprenant :
