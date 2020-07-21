@@ -6,7 +6,7 @@
 
 Début de formation le 23/05/2020 [développeur web](https://openclassrooms.com/fr/paths/185-developpeur-web) OpenClassrooms
 
-Web-Projet 3 : Dynamisez une page web avec des animations CSS
+Projet 3 : Dynamisez une page web avec des animations CSS
 
 ## Compétences évaluées :
 
