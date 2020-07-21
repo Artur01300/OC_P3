@@ -4,7 +4,7 @@ Début de formation le 23/05/2020 [développeur web](https://openclassrooms.com/
 
 Projet 3 : Dynamisez une page web avec des animations CSS
 
-## Contraintes
+### Contraintes
 ● Le développement devra se faire en CSS.
 ● L’ensemble du site devra être responsive.
 ● Le page HTML devra passer la validation w3c sans erreur.
