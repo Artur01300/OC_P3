@@ -16,7 +16,7 @@ Projet 3 : Dynamisez une page web avec des animations CSS
 ● Le site doit être parfaitement compatible avec les dernières versions desktop de
 Chrome, Firefox et Safari.
 
-## Livrables attendus
+### Livrables attendus
 Un site web comprenant :
 - une page d’accueil avec le logo de l’entreprise, un espace contenant les 4 menus,
 une section “prochainement” et les rubriques « Mention légales » et « Contactez-nous » ;
