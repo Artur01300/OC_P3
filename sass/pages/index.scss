@@ -14,10 +14,13 @@
 .menu-cover__title{
   font-size: 2em;
 }
+.link {
+  width: 31%;
+  margin: 30px;
+  text-decoration: none;
+}
 .menu-cover {
   box-shadow: 1px 1px 10px #8d8c8c;
-  margin-bottom: 40px;
-  max-width: 290px;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -38,10 +41,6 @@
 }
 .menu-cover__imgnote{
   width: 60px;
-}
-.link {
-  width: 40%;
-  text-decoration: none;
 }
 .menu-cover__byline{
   font-size: 1.5em;
