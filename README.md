@@ -1,4 +1,4 @@
-#OpenClassrooms-Développeur Web
+# OpenClassrooms-Développeur Web
 ===
 
 Début de formation le 23/05/2020 [développeur web](https://openclassrooms.com/fr/paths/185-developpeur-web) OpenClassrooms
@@ -7,7 +7,7 @@ Début de formation le 23/05/2020 [développeur web](https://openclassrooms.com/
 
 Projet 3 : Dynamisez une page web avec des animations CSS
 
-###Contraintes
+### Contraintes
 * Le développement devra se faire en CSS.
 * L’ensemble du site devra être responsive.
 * Le page HTML devra passer la validation w3c sans erreur.
@@ -19,7 +19,7 @@ Projet 3 : Dynamisez une page web avec des animations CSS
 * Le site doit être parfaitement compatible avec les dernières versions desktop de
   Chrome, Firefox et Safari.
 
-###Livrables attendus
+### Livrables attendus
   Un site web comprenant :
 * une page d’accueil avec le logo de l’entreprise, un espace contenant les 4 menus,
   une section “prochainement” et les rubriques « Mention légales » et « Contactez-nous » ;
@@ -41,7 +41,7 @@ Projet 3 : Dynamisez une page web avec des animations CSS
 * les titres représentant les catégories entrées, plats, desserts devront être soulignés
   de gauche à droit au survol de la souris.
 
-##Compétences évaluées :
+## Compétences évaluées :
 
 * Mettre en œuvre des effets CSS graphiques avancés
 * Assurer la cohérence graphique d'un site web
