@@ -49,5 +49,3 @@ Projet 3 : Dynamisez une page web avec des animations CSS
 
 * Lien Projet3:
   https://artur01300.github.io/OC_P3
-
-  https://https://www.artur-karapetyan.fr/p3
